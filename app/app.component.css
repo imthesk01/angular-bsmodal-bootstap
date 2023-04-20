@@ -1,0 +1,30 @@
+.summery-header{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body{
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+.title-name{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.rowData{
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.modal-footer{
+  padding: 5px;
+  border-top: 0px;
+}
+
+.upgrade-button{
+  margin: 10px;
+}

@@ -1,0 +1,100 @@
+<hello name="{{ name }}"></hello>
+<p>
+  <button type="button" class="btn btn-primary" (click)="openModal(template)">
+    Create template modal
+  </button>
+</p>
+
+<ng-template #template>
+  <!-- <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal for user id : {{ modalService.config.initialState.id }}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div> -->
+  <!--  -->
+
+  <div class="facality-summery-content">
+    <div class="modal-header summery-header">
+      <div class="admin-titlebar">
+        <button
+          type="button"
+          class="close pull-right"
+          (click)="addAgenciesClose()"
+        >
+          <!-- <span class="fa fa-times">
+          <span class=sr-only>Close Button</span>
+        </span> -->
+          close
+        </button>
+      </div>
+      <div class="title-name">
+        <span class="title-name">Facility Assignment Summary</span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-6 rowData">
+          <label for="name">Consumer Name:</label>
+          <span>Consumer Name value</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 rowData">
+          <label for="name">3877-78 Facility:</label>
+          <a (click)="openNewWindow('https://www.google.com/')"
+            >Consumer Name value</a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 rowData">
+          <label for="name">3877-78:</label>
+          <span>Consumer Name value</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 rowData">
+          <label for="name">Admission Date:</label>
+          <span>Consumer Name value</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 rowData">
+          <label for="name">Evaluation:</label>
+          <span>Consumer Name value</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 rowData">
+          <label for="name">Level II Facility:</label>
+          <span>Consumer Name value</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+    <div class="upgrade-button text-center">
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="addAgenciesClose()"
+    >
+      Upgrade
+    </button>
+  </div>
+      <div class="footer-note text-center">
+        <span>
+          Note : this is a dummy note in footer, Update it with correct note,
+          this is a dummy note in footer, Update it with correct note.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+</ng-template>
