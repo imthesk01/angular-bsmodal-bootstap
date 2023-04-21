@@ -1,0 +1,81 @@
+<div class="facality-summery-content">
+<div class="modal-header summery-header">
+  <div class="titlebar">
+    <button
+      type="button"
+      class="close pull-right"
+      (click)="addAgenciesClose()"
+    >
+      <!-- <span class="fa fa-times">
+      <span class=sr-only>Close Button</span>
+    </span> -->
+      close
+    </button>
+  </div>
+  <div class="title-name">
+    <span class="title-name">Facility Assignment Summary</span>
+  </div>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-6 rowData">
+      <div class="summery-label">Consumer Name:</div>
+      <div class="value">John Smith</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 rowData">
+      <div class="summery-label">3877-78 Facility:</div>
+      <div  class="value"> Level | Facilty Name </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 rowData">
+      <div class="summery-label">3877-78:</div>
+      <a  class="value"
+        class="value "
+        (click)="openNewWindow('https://www.google.com/')"
+        >PAS</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 rowData">
+      <div class="summery-label">Admission Date:</div>
+      <div  class="value">3877-78 Admission date</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 rowData">
+      <div class="summery-label">Evaluation:</div>
+      <a  class="value" (click)="openNewWindow('https://www.google.com/')"
+        >PAS (Level II)</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 rowData">
+      <div class="summery-label">Level II Facility:</div>
+      <div  class="value"> Facility Name</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <div class="upgrade-button text-center">
+    <button
+      type="button"
+      class="btn btn-primary btn-upgrade"
+      (click)="addAgenciesClose()"
+    >
+      Upgrade facility for Level II
+    </button>
+  </div>
+  <div class="footer-note text-center">
+    <div>
+      Note : this is a dummy note in footer, Update it with correct note,
+      this is a dummy note in footer, Update it with correct note.
+    </div>
+  </div>
+</div>
+</div>

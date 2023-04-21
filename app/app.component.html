@@ -1,4 +1,3 @@
-<hello name="{{ name }}"></hello>
 <p>
   <button type="button" class="btn btn-primary" (click)="openModal(template)">
     Create template modal
@@ -6,28 +5,15 @@
 </p>
 
 <ng-template #template>
-  <!-- <div class="modal-header">
-    <h4 class="modal-title pull-left">Modal for user id : {{ modalService.config.initialState.id }}</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    This is a modal.
-  </div> -->
-  <!--  -->
-
-  <div class="facality-summery-content">
+  <app-model-comp></app-model-comp>
+  <!-- <div class="facality-summery-content">
     <div class="modal-header summery-header">
-      <div class="admin-titlebar">
+      <div class="titlebar">
         <button
           type="button"
           class="close pull-right"
           (click)="addAgenciesClose()"
         >
-          <!-- <span class="fa fa-times">
-          <span class=sr-only>Close Button</span>
-        </span> -->
           close
         </button>
       </div>
@@ -38,63 +24,66 @@
     <div class="modal-body">
       <div class="row">
         <div class="col-6 rowData">
-          <label for="name">Consumer Name:</label>
-          <span>Consumer Name value</span>
+          <div class="summery-label">Consumer Name:</div>
+          <div class="value">John Smith</div>
         </div>
       </div>
       <div class="row">
         <div class="col-6 rowData">
-          <label for="name">3877-78 Facility:</label>
-          <a (click)="openNewWindow('https://www.google.com/')"
-            >Consumer Name value</a
+          <div class="summery-label">3877-78 Facility:</div>
+          <div  class="value"> Level | Facilty Name </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 rowData">
+          <div class="summery-label">3877-78:</div>
+          <a  class="value"
+            class="value "
+            (click)="openNewWindow('https://www.google.com/')"
+            >PAS</a
           >
         </div>
       </div>
       <div class="row">
         <div class="col-6 rowData">
-          <label for="name">3877-78:</label>
-          <span>Consumer Name value</span>
+          <div class="summery-label">Admission Date:</div>
+          <div  class="value">3877-78 Admission date</div>
         </div>
       </div>
       <div class="row">
         <div class="col-6 rowData">
-          <label for="name">Admission Date:</label>
-          <span>Consumer Name value</span>
+          <div class="summery-label">Evaluation:</div>
+          <a  class="value" (click)="openNewWindow('https://www.google.com/')"
+            >PAS (Level II)</a
+          >
         </div>
       </div>
       <div class="row">
         <div class="col-6 rowData">
-          <label for="name">Evaluation:</label>
-          <span>Consumer Name value</span>
+          <div class="summery-label">Level II Facility:</div>
+          <div  class="value"> Facility Name</div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 rowData">
-          <label for="name">Level II Facility:</label>
-          <span>Consumer Name value</span>
-        </div>
-      </div>
-
     </div>
 
     <div class="modal-footer">
-    <div class="upgrade-button text-center">
-    <button
-      type="button"
-      class="btn btn-primary"
-      (click)="addAgenciesClose()"
-    >
-      Upgrade
-    </button>
-  </div>
+      <div class="upgrade-button text-center">
+        <button
+          type="button"
+          class="btn btn-primary btn-upgrade"
+          (click)="addAgenciesClose()"
+        >
+          Upgrade facility for Level II
+        </button>
+      </div>
       <div class="footer-note text-center">
-        <span>
+        <div>
           Note : this is a dummy note in footer, Update it with correct note,
           this is a dummy note in footer, Update it with correct note.
-        </span>
+        </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--  -->
 </ng-template>
