@@ -24,7 +24,20 @@ export class ModelCompComponent implements OnInit {
     this.modalRef.hide();
   }
 
+  updateFacilty() {
+    alert('Please Ensure to complete document');
+  }
+
   openNewWindow(url: string) {
     this.renderer.setProperty(window.open(url), 'opener', null);
+  }
+
+  onRowClick() {
+    console.log('Row clicked');
+  }
+
+  onButtonClick(event: MouseEvent) {
+    event.stopPropagation();
+    console.log('Button clicked');
   }
 }
